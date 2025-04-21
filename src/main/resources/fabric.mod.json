@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "simpleservermonitor",
+  "version": "${version}",
+  "name": "simpleServerMonitor",
+  "description": "A simple server monitering mod with a web-based GUI",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/simpleservermonitor/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.redwoodsteve.simpleservermonitor.Simpleservermonitor"
+    ]
+  },
+  "mixins": [
+    "simpleservermonitor.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
