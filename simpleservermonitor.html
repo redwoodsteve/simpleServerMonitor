@@ -52,11 +52,12 @@
 			setInterval(function() {
 				let http = new XMLHttpRequest();
 				http.open("GET", window.location.href + "performanceStats");
+				console.log(window.location.href + "performanceStats");
 
 				http.send();
 				const response = JSON.parse(http.responseText);
 				document.getElementById("serverName").innerText = response.name;
-			})
+			}, 1000)
 		</script>
 	</body>
 </html>
