@@ -16,7 +16,7 @@ public class DownloadFile {
 
         if (connection.getResponseCode() == HttpURLConnection.HTTP_OK) {
 
-            Files.write(downloadPath, connection.getInputStream().readAllBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+            Files.write(downloadPath, connection.getInputStream().readAllBytes(), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 
         }
     }
