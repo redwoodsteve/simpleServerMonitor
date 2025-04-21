@@ -28,11 +28,13 @@ public class EventListeners {
 
 
         try {
+            logger.info("Downloading HTML file from https://raw.githubusercontent.com/redwoodsteve/simpleServerMonitor/refs/heads/master/simpleservermonitor.html");
             DownloadFile.downloadFromURL(
-                    new URL("https://raw.githubusercontent.com/redwoodsteve/redwoodsteve.github.io/refs/heads/main/index.html"),
+                    new URL("https://raw.githubusercontent.com/redwoodsteve/simpleServerMonitor/refs/heads/master/simpleservermonitor.html"),
                     websiteFolderPath.resolve("index.html")
             );
         } catch (IOException e) {
+            logger.error("Download failed.");
             throw new RuntimeException(e);
         }
 
