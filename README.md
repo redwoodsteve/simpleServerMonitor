@@ -12,7 +12,7 @@ It lets you monitor your minecraft server, with a GUI.
 ## Config
 serverAuth: a password for accessing the server monitor ("no" = no authentication) \[NOT IMPLEMENTED YET, DONT USE!!!!\]
 serverName: the name of the server. set to anything lol
-serverPort: the port that the monitor will be hosted on. **YOU HAVE TO (PORT FORWARD)[https://www.noip.com/support/knowledgebase/general-port-forwarding-guide] THIS PORT TO ACCESS THE MONITOR FROM OUTSIDE YOUR WIFI!**
+serverPort: the port that the monitor will be hosted on. **YOU HAVE TO [PORT FORWARD](https://www.noip.com/support/knowledgebase/general-port-forwarding-guide) THIS PORT TO ACCESS THE MONITOR FROM OUTSIDE YOUR WIFI!**
 
 ## The GUI
 ![the gui](https://i.imgur.com/WlriOVg.png)
