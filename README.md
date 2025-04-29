@@ -15,7 +15,7 @@ serverName: the name of the server. set to anything lol
 serverPort: the port that the monitor will be hosted on. **YOU HAVE TO (PORT FORWARD)[https://www.noip.com/support/knowledgebase/general-port-forwarding-guide] THIS PORT TO ACCESS THE MONITOR FROM OUTSIDE YOUR WIFI!**
 
 ## The GUI
-![https://i.imgur.com/WlriOVg.png]
+[https://i.imgur.com/WlriOVg.png the gui]
 **Server name**: (top-left) the name of the server you are viewing
 **Log**: (bottom-center) the log of the server
 **Auto-scroll** (top-left of the log) a toggle button to enable/disable autoscroll on the log
