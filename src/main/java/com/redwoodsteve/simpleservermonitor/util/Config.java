@@ -51,18 +51,6 @@ public class Config {
         }
 
     }
-    public static void writeConfig(String key, Object value) {
-
-        Yaml yaml = new Yaml(Simpleservermonitor.yamlOptions);
-
-        Map<String, Object> currentConfig = getConfig();
-        if (currentConfig.containsKey(key)) {
-            currentConfig.put(key, value);
-        } else {
-            logger.error("Could not write config: could not find key \"{}\" in config.", key);
-        }
-
-    }
     public static Map<String, Object> getConfig() {
 
         Yaml yaml = new Yaml(Simpleservermonitor.yamlOptions);

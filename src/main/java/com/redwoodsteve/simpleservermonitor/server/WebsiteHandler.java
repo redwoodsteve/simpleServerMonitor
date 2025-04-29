@@ -1,10 +1,8 @@
 package com.redwoodsteve.simpleservermonitor.server;
 
 import com.redwoodsteve.simpleservermonitor.EventListeners;
-import com.redwoodsteve.simpleservermonitor.Simpleservermonitor;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
-import org.slf4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
