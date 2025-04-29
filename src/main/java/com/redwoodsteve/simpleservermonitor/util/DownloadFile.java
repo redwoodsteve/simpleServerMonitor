@@ -3,9 +3,7 @@ package com.redwoodsteve.simpleservermonitor.util;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
@@ -15,6 +13,11 @@ public class DownloadFile {
         connection.setRequestMethod("GET");
 
         if (connection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+
+            if (!Files.exists(downloadPath)) {
+                Files.createDirectories(downloadPath.getParent());
+                Files.createFile(downloadPath);
+            }
 
             Files.write(downloadPath, connection.getInputStream().readAllBytes(), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 

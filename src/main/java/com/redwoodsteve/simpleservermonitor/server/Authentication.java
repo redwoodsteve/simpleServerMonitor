@@ -1,6 +1,6 @@
 package com.redwoodsteve.simpleservermonitor.server;
 
-import com.redwoodsteve.simpleservermonitor.Config;
+import com.redwoodsteve.simpleservermonitor.util.Config;
 
 public class Authentication {
     public static boolean isAuthorized(String input) {

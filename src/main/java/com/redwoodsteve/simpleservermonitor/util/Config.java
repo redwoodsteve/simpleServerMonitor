@@ -1,5 +1,6 @@
-package com.redwoodsteve.simpleservermonitor;
+package com.redwoodsteve.simpleservermonitor.util;
 
+import com.redwoodsteve.simpleservermonitor.Simpleservermonitor;
 import net.fabricmc.loader.api.FabricLoader;
 import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
@@ -7,7 +8,6 @@ import org.yaml.snakeyaml.Yaml;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;

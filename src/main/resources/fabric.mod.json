@@ -4,10 +4,9 @@
   "version": "${version}",
   "name": "simpleServerMonitor",
   "description": "A simple server monitering mod with a web-based GUI",
-  "authors": [],
+  "authors": ["redwoodsteve"],
   "contact": {},
-  "license": "All-Rights-Reserved",
-  "icon": "assets/simpleservermonitor/icon.png",
+  "license": "MIT",
   "environment": "server",
   "entrypoints": {
     "main": [
@@ -19,7 +18,6 @@
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-    "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": ">=1.16"
   }
 }

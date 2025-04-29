@@ -5,6 +5,9 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],
+  "server": [
+    "ServerStartMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
