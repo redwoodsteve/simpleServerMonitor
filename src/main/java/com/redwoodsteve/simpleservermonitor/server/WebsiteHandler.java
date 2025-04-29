@@ -13,9 +13,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WebsiteHandler implements HttpHandler {
-
-    private static final Logger logger = Simpleservermonitor.logger;
-
     @Override
     public void handle(HttpExchange exchange) throws IOException {
 

@@ -12,14 +12,13 @@ import org.slf4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.InetSocketAddress;
-import java.net.URL;
+import java.net.*;
 import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
 
+@SuppressWarnings("ResultOfMethodCallIgnored")
 public class EventListeners {
     static Logger logger = Simpleservermonitor.logger;
     public static Path websiteFolderPath;
@@ -35,7 +34,7 @@ public class EventListeners {
             String websiteRepo = "https://raw.githubusercontent.com/redwoodsteve/simpleServerMonitorWebsite/refs/heads/main/";
 
             logger.info("Downloading HTML files");
-            HttpURLConnection connection = (HttpURLConnection) new URL("https://api.github.com/repos/redwoodsteve/simpleServerMonitorWebsite/git/trees/main?recursive=1").openConnection();
+            HttpURLConnection connection = (HttpURLConnection) new URI("https://api.github.com/repos/redwoodsteve/simpleServerMonitorWebsite/git/trees/main?recursive=1").toURL().openConnection();
             connection.setRequestMethod("GET");
 
             String filesString = new String(connection.getInputStream().readAllBytes(), Charset.defaultCharset());
@@ -45,7 +44,7 @@ public class EventListeners {
             GithubTreeResponse files = gson.fromJson(filesString, GithubTreeResponse.class);
             for (Map<String, Object> paths : files.tree) {
 
-                URL fileURL = new URL(websiteRepo + paths.get("path"));
+                URL fileURL = new URI(websiteRepo + paths.get("path")).toURL();
 
                 DownloadFile.downloadFromURL(fileURL, Paths.get(websiteFolderPath.toString() + "/" + paths.get("path")));
 
@@ -53,11 +52,13 @@ public class EventListeners {
 
 
             DownloadFile.downloadFromURL(
-                    new URL("https://raw.githubusercontent.com/redwoodsteve/simpleServerMonitor/refs/heads/master/simpleservermonitor.html"),
+                    new URI("https://raw.githubusercontent.com/redwoodsteve/simpleServerMonitor/refs/heads/master/simpleservermonitor.html").toURL(),
                     websiteFolderPath.resolve("index.html")
             );
         } catch (IOException e) {
             logger.error("Download failed.");
+            throw new RuntimeException(e);
+        } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
 
