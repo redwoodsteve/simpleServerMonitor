@@ -16,6 +16,6 @@ serverPort: the port that the monitor will be hosted on. **YOU HAVE TO [PORT FOR
 
 ## The GUI
 ![the gui](https://i.imgur.com/WlriOVg.png)
-**Server name**: (top-left) the name of the server you are viewing
-**Log**: (bottom-center) the log of the server
+**Server name**: (top-left) the name of the server you are viewing\
+**Log**: (bottom-center) the log of the server\
 **Auto-scroll** (top-left of the log) a toggle button to enable/disable autoscroll on the log
