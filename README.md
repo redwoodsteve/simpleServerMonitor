@@ -10,8 +10,8 @@ It lets you monitor your minecraft server, with a GUI.
 5. Edit the config.yml file to your liking
 
 ## Config
-serverAuth: a password for accessing the server monitor ("no" = no authentication) \[NOT IMPLEMENTED YET, DONT USE!!!!\]\n
-serverName: the name of the server. set to anything lol\n
+serverAuth: a password for accessing the server monitor ("no" = no authentication) \[NOT IMPLEMENTED YET, DONT USE!!!!\]\
+serverName: the name of the server. set to anything lol\
 serverPort: the port that the monitor will be hosted on. **YOU HAVE TO [PORT FORWARD](https://www.noip.com/support/knowledgebase/general-port-forwarding-guide) THIS PORT TO ACCESS THE MONITOR FROM OUTSIDE YOUR WIFI!**
 
 ## The GUI
