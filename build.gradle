@@ -18,7 +18,6 @@ loom {
     }
 }
 
-
 repositories {
     mavenCentral()
 }
@@ -32,7 +31,8 @@ dependencies {
     //modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "org.slf4j:slf4j-api:2.0.13"
 
-    implementation 'org.yaml:snakeyaml:2.3'
+    modImplementation 'org.yaml:snakeyaml:2.4'
+    include "org.yaml:snakeyaml:2.4"
 }
 
 processResources {
