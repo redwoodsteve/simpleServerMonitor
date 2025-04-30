@@ -1,6 +1,5 @@
 # Simple Server Monitor
 It lets you monitor your minecraft server, with a GUI.
-**LATEST VERSION:** https://github.com/redwoodsteve/simpleServerMonitor/releases/tag/1.0.0-beta.1
 *(its free btw)*
 
 ## Setup
