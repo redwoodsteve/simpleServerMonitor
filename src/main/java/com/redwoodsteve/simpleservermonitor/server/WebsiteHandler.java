@@ -9,6 +9,8 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class WebsiteHandler implements HttpHandler {
     @Override
@@ -38,7 +40,9 @@ public class WebsiteHandler implements HttpHandler {
         //String fileContent = new String(fileBytes, Charset.defaultCharset());
         fileStream.close();
         String ext;
-        if (exchange.getRequestURI().toString().equalsIgnoreCase("/")) {
+        Pattern pattern = Pattern.compile("(\\?.*)?", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(exchange.getRequestURI().toString());
+        if (matcher.find()) {
             ext = "html";
         } else {
             String[] arr = exchange.getRequestURI().toString().split("\\.");
