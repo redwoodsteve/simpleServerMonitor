@@ -5,7 +5,7 @@ It lets you monitor your minecraft server, with a GUI.
 ## Setup
 1. Install the mod
 2. Run the server
-3. You should see a `simpleservermonitor` pop up
+3. You should see a `simpleservermonitor` folder pop up
 4. Inside the folder, you will find a `config.yml` file
 5. Edit the config.yml file to your liking
 
