@@ -9,10 +9,17 @@ It lets you monitor your minecraft server, with a GUI.
 4. Inside the folder, you will find a `config.yml` file
 5. Edit the config.yml file to your liking
 
+## Connecting
+1. Open a browser on your network
+2. Type in your server's local ip, followed by ":8080" (example: 192.168.0.0:8080)
+3. Connected!
+
+### Connecting from outside your local network
+Just port forward whatever port the monitor is on (default is 8080) and view from a browser
+
 ## Config
-serverAuth: a password for accessing the server monitor ("no" = no authentication) \[NOT IMPLEMENTED YET, DONT USE!!!!\]\
 serverName: the name of the server. set to anything lol\
-serverPort: the port that the monitor will be hosted on. **YOU HAVE TO [PORT FORWARD](https://www.noip.com/support/knowledgebase/general-port-forwarding-guide) THIS PORT TO ACCESS THE MONITOR FROM OUTSIDE YOUR WIFI!**
+serverPort: the port that the monitor will be hosted on.
 
 ## The GUI
 ![the gui](https://i.imgur.com/WlriOVg.png)
