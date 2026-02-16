@@ -20,6 +20,7 @@ Just port forward whatever port the monitor is on (default is 8080) and view fro
 ## Config
 serverName: the name of the server. set to anything lol\
 serverPort: the port that the monitor will be hosted on.
+serverAuth: doesnt do anything right now, will be implemented "later"
 
 ## The GUI
 ![the gui](https://i.imgur.com/WlriOVg.png)
