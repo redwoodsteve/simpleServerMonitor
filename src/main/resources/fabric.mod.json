@@ -3,7 +3,7 @@
   "id": "simpleservermonitor",
   "version": "${version}",
   "name": "simpleServerMonitor",
-  "description": "A simple server monitering mod with a web-based GUI",
+  "description": "A simple server monitoring mod with a web-based GUI",
   "authors": ["redwoodsteve"],
   "contact": {},
   "license": "MIT",
