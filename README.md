@@ -3,7 +3,7 @@ It lets you monitor your minecraft server, with a GUI.
 *(its free btw)*
 
 ## Setup
-1. Install the mod
+1. Install [the mod](https://github.com/redwoodsteve/simpleServerMonitor/releases)
 2. Run the server
 3. You should see a `simpleservermonitor` folder pop up
 4. Inside the folder, you will find a `config.yml` file
