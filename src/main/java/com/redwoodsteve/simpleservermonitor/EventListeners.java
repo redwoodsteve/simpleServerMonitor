@@ -1,6 +1,7 @@
 package com.redwoodsteve.simpleservermonitor;
 
 import com.google.gson.Gson;
+import com.redwoodsteve.simpleservermonitor.server.ExecuteHandler;
 import com.redwoodsteve.simpleservermonitor.server.ServerStatsHandler;
 import com.redwoodsteve.simpleservermonitor.server.WebsiteHandler;
 import com.redwoodsteve.simpleservermonitor.util.Config;
@@ -66,6 +67,7 @@ public class EventListeners {
             HttpServer httpServer = HttpServer.create(new InetSocketAddress((Integer) Config.getFromKey("serverPort")), 0);
 
             httpServer.createContext("/performanceDetails", new ServerStatsHandler(server));
+            httpServer.createContext("/execute", new ExecuteHandler(server));
             httpServer.createContext("/", new WebsiteHandler());
 
             httpServer.setExecutor(null);
