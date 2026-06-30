@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "simpleservermonitor",
+	"version": "${version}",
+	"name": "Simple Server Monitor",
+	"description": "A simple server monitoring mod with a web-based GUI",
+	"authors": [
+		"redwoodsteve"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/simpleservermonitor/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.redwoodsteve.SimpleServerMonitor"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": ">=26.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
